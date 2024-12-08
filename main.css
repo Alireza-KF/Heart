@@ -12,6 +12,9 @@
     font-style: normal;
 }
 
+@media screen and (min-width: 1400px) {
+    
+
 * {
     margin: 0;
     padding: 0;
@@ -515,4 +518,5 @@ img.vector2{
     position: absolute;
     top: 55.3%;
     left: 62.2%;
+}
 }
