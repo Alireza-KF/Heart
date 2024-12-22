@@ -3,61 +3,64 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="/main.css">
+    <link rel="stylesheet" href="/Heart/main.css">
     <script src="https://cdn.tailwindcss.com"></script>
     <title>Document</title>
 </head>
 <body class="body">
-    <header class="flex justify-between p-8">
-        <div>
-            <img src="./public/images/realistic-heart-shape-studio-2.png" alt="">
-        </div>
-        <div>
-            <ul class="flex justify-between gap-x-14 text-white font-semibold">
-                <li><a href="#">About</a></li>
-                <li><a href="#" class="">Services</a></li>
-                <li><a href="#" class="">Medics</a></li>
-              </ul>
-        </div>
-        <div>
-            <ul class="flex justify-between gap-x-10 text-white font-semibold">
-                <li><a href="#" class="">Login</a></li>
-                <li><a href="#" class="">Register</a></li>
-              </ul>
+    <!--------------------- header -->
+    <header class=" p-10">
+        <div class="menu-container">
+            <div>
+                <img class="navimg" src="./public/images/realistic-heart-shape-studio-2.png" alt="">
+            </div>
+            <div class="hamburger" onclick="toggleMenu()">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+            <div class="menu" id="menu">
+                <ul>
+                    <li><a href="#">About</a></li>
+                    <li><a href="#">Services</a></li>
+                    <li><a href="#">Medics</a></li>
+                </ul>
+            </div>
+            <div class="menu" id="menu">
+                <ul>
+                    <li><a href="#">Login</a></li>
+                    <li><a href="#">Register</a></li>
+                </ul>
+            </div>
         </div>
     </header>
-    <main class="container md:flex justify-between p-8 pt-0">
-        <div class="lefttext">
-            <div class="box1 absolute z-10 bg-[#000000] bg-opacity-40 text-center w-[160px]  py-4 rounded-3xl">
-                <h1 class=" text-white font-semibold">Stay Active</h1>
-                <p class=" text-gray-300 text-[12px]">
-                    Lorem Ipsum has <br> been the industry's <br> standard dummy <br> text 
-                </p>
-            </div>
-            <h1 class="h text-white text-[30px] font-semibold">Take Care of Your <br> Heart Diseases </h1>
-            <p class=" text-[14px] mt-6 mb-12 text-gray-300">it keeps running 24/7, non-stop, always by <br>
+    <!--------------------- main -->
+    <main>
+        <!-- left main  -->
+        <div class="left ">
+            <h1 class=" text-white font-semibold">Take Care of Your Heart Diseases </h1>
+            <p class="mt-6 mb-12 text-gray-300">it keeps running 24/7, non-stop, always by <br>
                 your side. Give a damn about your heart</p>
-            <ul class=" ml-8 text-white text-[14px] list-disc">
+            <ul class=" ml-8 text-white list-disc">
                 <li>interactive 3D models</li>
                 <li>Expert heart health insights </li>
                 <li>Personalized health tracking tools</li>
             </ul>
-            <div><button class="button absolute text-[#620511] bg-white pt-4 pb-4 pr-14 pl-14 mt-12 rounded-full">Get in touch</button></div>
+            <button class="button">Get in touch</button>
         </div>
-        <div class="relative z-0	">
-            <img class="imgbg " src="./public/images/realistic-heart-shape-studio 1.png" alt="">
-        </div>
-        <div class="">
-            <div class="texttop absolute ml-[-200px] ">
-                <h1 class=" text-white font-semibold">The Right Atrium </h1>
-                <p class=" text-gray-300 text-[12px]">receives and holds <br> deoxygenated blood from <br> the superior vena cava
-                </p>
-                <div class="absolute ml-[-70%] w-[200px] h-[40px] border-r-2 border-b-2">
-                    
+        <!-- right main  -->
+        <div class="right relative">
+            <div class=" flex relative ">
+                <img class="img" src="./public/images/realistic-heart-shape-studio 1.png" alt="">
+                <div class="toptext absolute right-[0]">
+                    <h1 class=" text-white font-semibold">The Right Atrium </h1>
+                    <p class=" text-gray-300 text-[12px]">receives and holds <br> deoxygenated blood from <br> the superior vena cava
+                    </p>
+                    <div class="ml-[-70px] mt-[20px] w-[150px] h-[30px] border-r-2 border-b-2">
+                        
+                    </div>
                 </div>
-            </div>
-            <div>
-                <div class="textdown absolute ml-[-250px] mt-[150px]">
+                <div class="downtext absolute right-[0]">
                     <h1 class=" text-white font-semibold">The Right Ventricle</h1>
                     <p class=" text-gray-300 text-[12px]">
                         The right ventricle pumps blood <br>
@@ -65,39 +68,47 @@
                         lungs. In the <br> lungs, the blood then gets a "refill" <br>
                          of oxygen
                     </p>
-                    <div class="absolute ml-[-20px] w-[120px] h-[80px] border-r-2 border-b-2">
+                    <div class="ml-[-20px] w-[120px] h-[80px] border-r-2 border-b-2">
                     
                     </div>
                 </div>
-                <div class="box3 absolute z-10 text-center w-[160px] text-center py-4 rounded-3xl">
-                    <h1 class=" text-white font-semibold">Check Up</h1>
-                    <p class=" text-gray-300 text-[12px]">Lorem Ipsum has <br>
-                     been the industry's </p>
-                </div>
-                <div class="box2 absolute z-10 bg-[#000000] bg-opacity-40 text-center w-[160px] text-center w-1/2 py-4 rounded-3xl">
-                    <h1 class=" text-white font-semibold">Eat Smart</h1>
-                    <p class=" text-gray-300 text-[12px]">
-                        Lorem Ipsum has <br> been the industry's 
-                    </p>
-                </div>
+                    <div class="box1 text-center rounded-3xl">
+                        <h1 class=" text-white font-semibold">Stay Active</h1>
+                        <p class=" text-gray-300">
+                            Lorem Ipsum has <br> been the industry's <br> standard dummy <br> text 
+                        </p>
+                    </div>
+                    <div class="box2 text-center rounded-3xl">
+                        <h1 class=" text-white font-semibold">Eat Smart</h1>
+                        <p class=" text-gray-300">
+                            Lorem Ipsum has <br> been the industry's 
+                        </p>
+                    </div>
+                    <div class="box3 text-center rounded-3xl">
+                        <h1 class=" text-white font-semibold">Check Up</h1>
+                        <p class=" text-gray-300">Lorem Ipsum has <br>
+                         been the industry's </p>
+                    </div>
             </div>
         </div>
     </main>
+    <!--------------------- footer -->
+    
     <footer class="footer flex justify-between pl-20 pr-20 pt-5 pb-4">
         <div class="text-white">
-            <h1 class="text-[16px] font-semibold">100,000 Beats</h1>
+            <h1 class="text-[26px] font-semibold">100,000 Beats</h1>
             <p class="text-[12px] text-gray-300">your heart beats 100,000 times daily</p>
         </div>
         <div class="text-white">
-            <h1 class="text-[16px] font-semibold">
-                2,000 Gallons
+            <h1 class="text-[26px] font-semibold">
+                    2,000 Gallons
             </h1>
             <p class="text-[12px] text-gray-300">
-                your heart beats 100,000 times daily
+                    your heart beats 100,000 times daily
             </p>
         </div>
         <div class="text-white">
-            <h1 class="text-[16px] font-semibold">
+            <h1 class="text-[26px] font-semibold">
                 1 in 4 Deaths
             </h1>
             <p class="text-[12px] text-gray-300">
@@ -105,5 +116,6 @@
             </p>
         </div>
     </footer>
+    <script src="script.js"></script>
 </body>
 </html>
