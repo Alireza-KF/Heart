@@ -8,113 +8,107 @@
 </head>
 <body class="body">
     <!--------------------- header -->
-    <header class="">
-        <div class="menu-container">
+    <header class=" container mx-auto mt-4 text-[#ffffff]">
+        <div class="flex text-center items-center justify-between">
+            <div class=""><img src="/public/images/realistic-heart-shape-studio-2.png" alt=""></div>
             <div>
-                <img class="navimg" src="./public/images/realistic-heart-shape-studio-2.png" alt="">
-            </div>
-            <div class="hamburger" onclick="toggleMenu()">
-                <span></span>
-                <span></span>
-                <span></span>
-            </div>
-            <div class="menu" id="menu">
-                <ul>
+                <ul class=" md:flex gap-12">
                     <li><a href="#">About</a></li>
                     <li><a href="#">Services</a></li>
                     <li><a href="#">Medics</a></li>
                 </ul>
             </div>
-            <div class="menu" id="menu">
-                <ul>
+            <div>
+                <ul class=" md:flex gap-12">
                     <li><a href="#">Login</a></li>
                     <li><a href="#">Register</a></li>
                 </ul>
             </div>
         </div>
     </header>
-    <!--------------------- main -->
-    <main>
-        <!-- left main  -->
-        <div class="left ">
-            <h1 class=" text-white font-semibold">Take Care of Your Heart Diseases </h1>
-            <p class="mt-6 mb-12 text-gray-300">it keeps running 24/7, non-stop, always by <br>
-                your side. Give a damn about your heart</p>
-            <ul class=" ml-8 text-white list-disc">
-                <li>interactive 3D models</li>
-                <li>Expert heart health insights </li>
-                <li>Personalized health tracking tools</li>
-            </ul>
-            <button class="button">Get in touch</button>
-        </div>
-        <!-- right main  -->
-        <div class="right relative">
-            <div class=" flex relative ">
-                <img class="img" src="./public/images/realistic-heart-shape-studio 1.png" alt="">
-                <div class="toptext absolute right-[0]">
-                    <h1 class=" text-white font-semibold">The Right Atrium </h1>
-                    <p class=" text-gray-300 text-[12px]">receives and holds <br> deoxygenated blood from <br> the superior vena cava
-                    </p>
-                    <div class="ml-[-70px] mt-[20px] w-[150px] h-[30px] border-r-2 border-b-2">
-                        
-                    </div>
-                </div>
-                <div class="downtext absolute right-[0]">
-                    <h1 class=" text-white font-semibold">The Right Ventricle</h1>
-                    <p class=" text-gray-300 text-[12px]">
-                        The right ventricle pumps blood <br>
-                        low in oxygen to the 
-                        lungs. In the <br> lungs, the blood then gets a "refill" <br>
-                         of oxygen
-                    </p>
-                    <div class="ml-[-20px] w-[120px] h-[80px] border-r-2 border-b-2">
-                    
-                    </div>
-                </div>
-                    <div class="box1 text-center rounded-3xl">
-                        <h1 class=" text-white font-semibold">Stay Active</h1>
-                        <p class=" text-gray-300">
-                            Lorem Ipsum has <br> been the industry's <br> standard dummy <br> text 
-                        </p>
-                    </div>
-                    <div class="box2 text-center rounded-3xl">
-                        <h1 class=" text-white font-semibold">Eat Smart</h1>
-                        <p class=" text-gray-300">
-                            Lorem Ipsum has <br> been the industry's 
-                        </p>
-                    </div>
-                    <div class="box3 text-center rounded-3xl">
-                        <h1 class=" text-white font-semibold">Check Up</h1>
-                        <p class=" text-gray-300">Lorem Ipsum has <br>
-                         been the industry's </p>
-                    </div>
+    <main class=" container mx-auto ">
+        <div class="md:flex justify-between items-center">
+            <!-- left main  -->
+            <div class="left w-[30%]">
+                <h1 class="md:text-[25px] text-white font-semibold">Take Care of Your Heart Diseases </h1>
+                <p class="md:my-6 text-gray-300">it keeps running 24/7, non-stop, always by <br>
+                     your side. Give a damn about your heart</p>
+                <ul class="text-white list-disc">
+                    <li>interactive 3D models</li>
+                    <li>Expert heart health insights </li>
+                    <li>Personalized health tracking tools</li>
+                </ul>
+                <button class="button bg-[#ffffff] px-10 py-5 rounded-full mt-5">Get in touch</button>
             </div>
+        <!-- right main  -->
+         <div class="right flex relative w-[70%]">
+                <div class="box absolute text-center rounded-3xl p-4 ml-[100px]">
+                    <h1 class=" text-[15px] text-white font-semibold">Stay Active</h1>
+                    <p class=" text-gray-300 text-[8px]">
+                        Lorem Ipsum has <br> been the industry's <br> standard dummy <br> text 
+                    </p>
+                </div>
+                <div class="box absolute text-center rounded-3xl p-4 right-0 mt-[250px]">
+                    <h1 class=" text-[15px] text-white font-semibold">Eat Smart</h1>
+                    <p class=" text-gray-300 text-[8px]">
+                        Lorem Ipsum has <br> been the industry's 
+                    </p>
+                </div>
+                <div class="box absolute text-center rounded-3xl p-4 ml-[400px] mt-[450px]">
+                    <h1 class=" text-[15px] text-white font-semibold">Check Up</h1>
+                    <p class=" text-gray-300 text-[8px]">Lorem Ipsum has <br>
+                     been the industry's </p>
+                </div>
+            <div class=" md:w-[600px]">
+                <img src="/public/images/realistic-heart-shape-studio 1.png" class="img" alt="">
+            </div>
+            <div class="toptext absolute ml-[570px] mt-[90px]">
+                <h1 class=" text-white font-semibold">The Right Atrium </h1>
+                <p class=" text-gray-300 text-[12px]">receives and holds <br> deoxygenated blood from <br> the superior vena cava
+                </p>
+                <div class="ml-[-70px] mt-[20px] w-[150px] h-[30px] border-r-2 border-b-2">
+                    
+                </div>
+            </div>
+            <div class="downtext absolute ml-[500px] mt-[230px]">
+                <h1 class=" text-white font-semibold">The Right Ventricle</h1>
+                <p class=" text-gray-300 text-[12px]">
+                    The right ventricle pumps blood <br>
+                    low in oxygen to the 
+                    lungs. In the <br> lungs, the blood then gets a "refill" <br>
+                     of oxygen
+                </p>
+                <div class="ml-[-20px] w-[120px] h-[80px] border-r-2 border-b-2">
+                
+                </div>
+            </div>
+         </div>
         </div>
     </main>
     <!--------------------- footer -->
     
-    <footer class="footer flex justify-between pl-20 pr-20 pt-5 pb-4">
+    <footer class="footer flex justify-between bg-[#C5202D]">
         <div class="text-white">
-            <h1 class="text-[26px] font-semibold">100,000 Beats</h1>
-            <p class="text-[12px] text-gray-300">your heart beats 100,000 times daily</p>
+            <h1 class=" font-semibold">100,000 Beats</h1>
+            <p class=" text-gray-300">your heart beats 100,000 times daily</p>
         </div>
         <div class="text-white">
-            <h1 class="text-[26px] font-semibold">
+            <h1 class=" font-semibold">
                     2,000 Gallons
             </h1>
-            <p class="text-[12px] text-gray-300">
+            <p class=" text-gray-300">
                     your heart beats 100,000 times daily
             </p>
         </div>
         <div class="text-white">
-            <h1 class="text-[26px] font-semibold">
+            <h1 class=" font-semibold">
                 1 in 4 Deaths
             </h1>
-            <p class="text-[12px] text-gray-300">
+            <p class=" text-gray-300">
                 your heart beats 100,000 times daily
             </p>
         </div>
     </footer>
-    <script src="./script.js"></script>
+    <script src="/src/style/script.js"></script>
 </body>
 </html>
