@@ -612,6 +612,10 @@ video {
   z-index: 10;
 }
 
+.float-left {
+  float: left;
+}
+
 .mx-auto {
   margin-left: auto;
   margin-right: auto;
@@ -625,12 +629,12 @@ video {
   margin-left: -70px;
 }
 
-.mt-16 {
-  margin-top: 4rem;
-}
-
 .mt-5 {
   margin-top: 1.25rem;
+}
+
+.mt-8 {
+  margin-top: 2rem;
 }
 
 .mt-\[20px\] {
@@ -855,30 +859,41 @@ footer{
 }
 
 @media only screen and (max-width: 440px) {
+  html, body{
+    overflow: visible;
+  }
+
+  main{
+    margin-bottom: 10px;
+  }
+
   .box1{
     width: 120px;
     height: 70px;
-    margin-top: 320px;
-    padding: 0px;
+    overflow: hidden;
+    width: 32%;
+    margin: 0 2px;
   }
 
   .box2{
     width: 120px;
     height: 70px;
-    margin-top: 320px;
-    padding: 0px;
+    overflow: hidden;
+    width: 32%;
+    margin: 0 2px;
   }
 
   .box3{
     width: 120px;
     height: 70px;
-    margin-top: 320px;
-    padding: 0px;
+    overflow: hidden;
+    width: 32%;
+    margin: 0 2px;
   }
 
   .toptext{
-    margin-top: 30px;
-    margin-left: 330px;
+    margin-top: -330px;
+    margin-left: 280px;
   }
 
   .toptext div{
@@ -886,8 +901,8 @@ footer{
   }
 
   .downtext{
-    margin-top: 150px;
-    margin-left: 300px;
+    margin-top: -200px;
+    margin-left: 250px;
   }
 
   .downtext div{
@@ -902,6 +917,14 @@ footer{
 }
 
 @media (min-width: 768px) {
+  .md\:absolute {
+    position: absolute;
+  }
+
+  .md\:relative {
+    position: relative;
+  }
+
   .md\:my-6 {
     margin-top: 1.5rem;
     margin-bottom: 1.5rem;
@@ -945,6 +968,34 @@ footer{
 
   .md\:mt-\[370px\] {
     margin-top: 370px;
+  }
+
+  .md\:ml-\[1080px\] {
+    margin-left: 1080px;
+  }
+
+  .md\:ml-\[130px\] {
+    margin-left: 130px;
+  }
+
+  .md\:ml-\[120px\] {
+    margin-left: 120px;
+  }
+
+  .md\:ml-\[110px\] {
+    margin-left: 110px;
+  }
+
+  .md\:ml-\[100px\] {
+    margin-left: 100px;
+  }
+
+  .md\:ml-\[90px\] {
+    margin-left: 90px;
+  }
+
+  .md\:ml-\[70px\] {
+    margin-left: 70px;
   }
 
   .md\:inline {
@@ -1013,6 +1064,14 @@ footer{
 }
 
 @media (min-width: 1024px) {
+  .lg\:absolute {
+    position: absolute;
+  }
+
+  .lg\:relative {
+    position: relative;
+  }
+
   .lg\:mx-0 {
     margin-left: 0px;
     margin-right: 0px;
@@ -1062,8 +1121,16 @@ footer{
     width: 70%;
   }
 
+  .lg\:p-0 {
+    padding: 0px;
+  }
+
   .lg\:text-left {
     text-align: left;
+  }
+
+  .lg\:text-\[15px\] {
+    font-size: 15px;
   }
 
   .lg\:text-\[16px\] {
@@ -1072,6 +1139,14 @@ footer{
 }
 
 @media (min-width: 1280px) {
+  .xl\:absolute {
+    position: absolute;
+  }
+
+  .xl\:relative {
+    position: relative;
+  }
+
   .xl\:my-6 {
     margin-top: 1.5rem;
     margin-bottom: 1.5rem;
@@ -1174,6 +1249,10 @@ footer{
     font-size: 12px;
   }
 
+  .xl\:text-\[15px\] {
+    font-size: 15px;
+  }
+
   .xl\:text-\[17px\] {
     font-size: 17px;
   }
@@ -1188,6 +1267,14 @@ footer{
 }
 
 @media (min-width: 1536px) {
+  .\32xl\:absolute {
+    position: absolute;
+  }
+
+  .\32xl\:relative {
+    position: relative;
+  }
+
   .\32xl\:inline {
     display: inline;
   }
@@ -1200,11 +1287,25 @@ footer{
     display: none;
   }
 
+  .\32xl\:px-5 {
+    padding-left: 1.25rem;
+    padding-right: 1.25rem;
+  }
+
+  .\32xl\:py-0 {
+    padding-top: 0px;
+    padding-bottom: 0px;
+  }
+
   .\32xl\:text-left {
     text-align: left;
   }
 
-  .\32xl\:text-\[18px\] {
-    font-size: 18px;
+  .\32xl\:text-\[13px\] {
+    font-size: 13px;
+  }
+
+  .\32xl\:text-\[17px\] {
+    font-size: 17px;
   }
 }
