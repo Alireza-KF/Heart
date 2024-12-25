@@ -1,16 +1,73 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
-body{
+html, body{
     background: rgb(207,35,48);
     background: linear-gradient(180deg, rgba(207,35,48,1) 0%, rgba(98,5,17,1) 100%);
     background-repeat: no-repeat;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    margin: 0;
+    overflow: hidden;
 }
-.box{
-   
+.box1{
     background: rgba(255, 255, 255, 0.3);
     border-radius: 16px;
     box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
     backdrop-filter: blur(17.3px);
     -webkit-backdrop-filter: blur(17.3px);
 }
+.box2{
+    background: rgba(255, 255, 255, 0.3);
+    border-radius: 16px;
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(17.3px);
+    -webkit-backdrop-filter: blur(17.3px);
+}
+.box3{
+    background: rgba(255, 255, 255, 0.3);
+    border-radius: 16px;
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(17.3px);
+    -webkit-backdrop-filter: blur(17.3px);
+}
+footer{
+    margin-top: auto;
+}
+@media only screen and (max-width: 440px) {
+    .box1{
+        width: 120px;
+        height: 70px;
+        margin-top: 320px;
+        padding: 0px;
+    }
+    .box2{
+        width: 120px;
+        height: 70px;
+        margin-top: 320px;
+        padding: 0px;
+    }
+    .box3{
+        width: 120px;
+        height: 70px;
+        margin-top: 320px;
+        padding: 0px;
+        
+    }
+    .toptext{
+        margin-top: 30px;
+        margin-left: 330px;
+    }
+    .toptext div{
+        width: 80px;
+    }
+    .downtext{
+        margin-top: 150px;
+        margin-left: 300px;
+    }
+    .downtext div{
+        width: 60px;
+        height: 50px;
+    }
+  }
